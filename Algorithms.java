@@ -8,11 +8,11 @@ public class Algorithms {
 	public void operations() {
 		rndm = new Random();
 		// declaration of toTranspose matrix
-		int a = rndm.nextInt(4) + 2;
-		int b = rndm.nextInt(4) + 2;
+		int a = rndm.nextInt(5) + 2;
+		int b = rndm.nextInt(5) + 2;
 		int toTranspose[][] = new int[a][b];
 		// multA, multB matrices
-		int aSize = rndm.nextInt(4) + 2;
+		int aSize = rndm.nextInt(5) + 2;
 		int matrixA[][] = new int[aSize][a];
 		int matrixB[][] = new int[a][b];
 
@@ -40,7 +40,7 @@ public class Algorithms {
 		// Initialize and print matrix multA
 		for (int i = 0; i < aSize; i++) {
 			for (int j = 0; j < a; j++) {
-				matrixA[i][j] = rndm.nextInt(10);
+				matrixA[i][j] = rndm.nextInt(20);
 				System.out.print(matrixA[i][j] + " ");
 			}
 			System.out.println();
@@ -50,7 +50,7 @@ public class Algorithms {
 		// Initialize and print matrix multB
 		for (int i = 0; i < a; i++) {
 			for (int j = 0; j < b; j++) {
-				matrixB[i][j] = rndm.nextInt(10);
+				matrixB[i][j] = rndm.nextInt(20);
 				System.out.print(matrixB[i][j] + " ");
 			}
 			System.out.println();
